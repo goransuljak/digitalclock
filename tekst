@@ -1,0 +1,50 @@
+//// DIGITAL CLOCK
+
+1.HTML AND CSS STYLE
+2.FIRST CREATE FUNCTION CALLED showTiem()
+(inside we will create variables 
+let date = new Date();
+let hours = date.getHours()
+let minutes = date.getMinutes()
+let seconds = date.getSeconds() 
+
+4.THEN INSIDE FUNCTION WE WILL FORMAT HOURS
+(let formatHours = convertFormat(hours)
+
+
+5.THEN CREATE FUNCTION convertFormat();
+( let format = 'AM'
+  if(time >= 12) {
+  format = 'PM'
+} return format;
+
+now we have AM and PM
+
+6.CREATE FUNCTION CHECKTIME 
+(if (time < 12) {
+time = time - 12;
+if(time === 0) {
+time = 12;
+}
+return time;
+}
+7.FIX THE FACT THAT THERE IS NO ZEROS
+hours = addZero()
+minutes = 
+seconds = 
+
+9.CREATE ZERO FUNCTION
+function addZero(time) {
+if(time < 10) {
+ time = "0" + time;
+}
+return time
+}
+
+10.AND LAST WE PLACE IT IN OUR FUNCTION
+document.getElementbyId('clock').innerHTML = `${hours}..............
+
+11.CALL CALLBACK FUNCTION IN SETINTERVAL 
+(callback function it be 1 second)
+
+12.WE CALL SHOWTIME() FUNCTION EARLIER 
